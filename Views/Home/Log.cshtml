@@ -1,0 +1,17 @@
+﻿@model LogViewModel
+@{
+    ViewData["Title"] = "Log de acesso";
+}
+
+<v-data-table class="h-full" :items="model.data" :headers="headers" :items-per-page="-1" hide-default-footer disable-sort>
+    <template v-slot:item.date="{ item }">
+        {{ new Date(item.date).toLocaleString() }}
+    </template>
+</v-data-table>
+
+@section Script {
+    <script>
+        var model = @Json.Serialize(Model)
+    </script>
+    <script src="~/Log/Log.js" asp-append-version="true"></script>
+}

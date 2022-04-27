@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Andrey Erick";
+}
+
+<div class="mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 p-2 max-w-screen-lg w-full mx-auto">
+        <div class="w-48 h-48 p-2 shadow-lg rounded-full mx-auto">
+            <v-img src="/Shared/Profile.jpg" class="rounded-full"></v-img>
+        </div>
+        <div class="w-auto h-48 mr-auto">
+            <div class="flex flex-col px-16 h-full">
+                <div class="text-4xl font-bold mt-auto">Andrey Erick</div>
+                <div class="text-uppercase text-xs text-gray-400 font-light mb-auto">Desenvolvedor de Software</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Script {
+    <script src="~/Home/Home.js" asp-append-version="true"></script>
+}
+
+@section Style {
+    <link rel="stylesheet" href="~/Home/Home.css" asp-append-version="true" />
+}
