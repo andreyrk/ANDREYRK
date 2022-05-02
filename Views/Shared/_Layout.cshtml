@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vuetify@2/dist/vuetify.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2/dist/tailwind.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@@mdi/font@6.x/css/materialdesignicons.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap">
 
     @await RenderSectionAsync("Style", required: false)
 </head>
@@ -83,5 +85,15 @@
     <script src="~/Shared/Shared.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Script", required: false)
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LNEJGC0FMZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-LNEJGC0FMZ');
+    </script>
 </body>
 </html>
