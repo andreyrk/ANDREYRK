@@ -1,4 +1,4 @@
-﻿var vuetifyConfig = new Vuetify({
+﻿var vuetifyOptions = {
     theme: {
         themes: {
             light: {
@@ -15,4 +15,4 @@
             },
         },
     },
-})
+}

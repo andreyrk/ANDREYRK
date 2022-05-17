@@ -1,6 +1,5 @@
 ﻿new Vue({
     el: "#app",
-    vuetify: vuetifyConfig,
     data: {
         app: app,
     },

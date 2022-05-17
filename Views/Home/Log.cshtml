@@ -3,13 +3,19 @@
     ViewData["Title"] = "Log de acesso";
 }
 
-<v-data-table class="h-full" :items="model.data" :headers="headers" :items-per-page="-1" hide-default-footer disable-sort>
-    <template v-slot:item.date="{ item }">
-        {{ new Date(item.date).toLocaleString() }}
-    </template>
-</v-data-table>
+<v-app>
+    <v-data-table class="h-full" :items="model.data" :headers="headers" :items-per-page="-1" hide-default-footer disable-sort>
+        <template v-slot:item.date="{ item }">
+            {{ new Date(item.date).toLocaleString() }}
+        </template>
+        <template v-slot:item.action="{ item }">
+            <v-btn icon target="_blank" :href="'https://www.abuseipdb.com/check/' + item.address"><v-icon small>mdi-crosshairs</v-icon></v-btn>
+        </template>
+    </v-data-table>
+</v-app>
 
 @section Script {
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2"></script>
     <script>
         var model = @Json.Serialize(Model)
     </script>

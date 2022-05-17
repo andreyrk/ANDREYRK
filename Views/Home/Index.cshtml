@@ -1,34 +1,38 @@
 ﻿@{
-    ViewData["Title"] = "Andrey Erick";
+    ViewData["Title"] = "Andrey Erick | Software Developer";
 }
 
-<div class="flex flex-col max-w-screen-md mx-auto">
-    <div class="grid grid-cols-1 sm:grid-cols-2 p-2 my-8">
-        <div class="w-48 h-48 p-2 shadow-lg rounded-full mx-auto">
-            <v-spacer></v-spacer>
-            <v-img src="/Shared/Profile.jpg" class="rounded-full"></v-img>
-        </div>
-        <div class="w-auto h-48 mr-auto">
-            <div class="flex flex-col px-16 h-full">
-                <div class="text-4xl font-bold mt-auto">
-                    Andrey Erick
-                </div>
-                <div class="text-uppercase text-xs text-gray-400 font-light mb-auto">
-                    Desenvolvedor de Software
+<div class="flex flex-col max-w-screen-lg mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 p-2 mt-8 mb-8">
+        <div class="flex w-full my-auto">
+            <div class="w-full md:w-auto md:ml-auto mx-6">
+                <div class="w-48 h-48 mx-4 shadow-lg rounded-full my-4 mx-auto">
+                    <img src="/Shared/Profile.jpg" class="rounded-full object-contain" />
                 </div>
             </div>
-            <v-spacer></v-spacer>
+        </div>
+        <div class="flex w-full my-auto">
+            <div class="w-full md:w-auto md:mr-auto mx-6">
+                <div class="flex flex-col h-full mt-2 mb-8 mx-auto text-center md:text-left">
+                    <div class="text-4xl font-bold mt-auto">
+                        Andrey Erick
+                    </div>
+                    <div class="uppercase text-sm text-gray-400 font-semibold mb-auto">
+                        Software Developer
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="grid grid-cols-10 gap-4">
-        <div class="col-span-7 text-justify p-2 my-8">
-            <h1 class="text-h6 mb-4">
+    <div class="grid grid-cols-1 md:grid-cols-10 p-2 mb-8 gap-4">
+        <div class="col-span-5 text-justify p-2 my-2">
+            <h1 class="text-xl font-bold mb-4">
                 A little about me :)
             </h1>
 
             I’m a team player, I value respect and trust and like keeping the workplace healthy, plus everyone’s more
             productive that way. And while I appreciate the autonomy when alone with a task, I don’t feel ashamed to 
-            seek help if I’m stuck.
+            seek help if I get stuck.
             <br /><br />
 
             Pragmatic thinking is prevalent in my work philosophy and client’s requests are often rough stones that 
@@ -40,13 +44,94 @@
             I’m a proactive quick learner and self-taught programmer, I’m comfortable writing and speaking English and
             have a good interpretation of the nuances in more complex contexts. During my free time I enjoy reading 
             books and articles, cooking, playing video games and moderating a brazilian programming community, plus, on
-            the weekends I volunteer on some non-profit organizations.
+            the weekends I like volunteering on non-profit organizations.
         </div>
-        <div class="col-span-3 text-justify p-2 my-8">
-            <h1 class="text-h6 mb-4">
-                Some of my skills!
+        <div class="col-span-5 p-2 my-2">
+            <h1 class="text-xl font-bold mb-4">
+                Stuff I've used often!
+            </h1>
+            <div class="flex flex-col">
+                <div class="flex justify-between">
+                    <h2 class="w-1/2">C#, .NET Core</h2>
+                    <h2 class="w-1/2">ASP.NET, Unity3D</h2>
+                </div>
+                <div class="flex justify-between">
+                    <h2 class="w-1/2">WinForms, WPF</h2>
+                    <h2 class="w-1/2">MSUnit, xUnit</h2>
+                </div>
+                <div class="flex justify-between mt-4">
+                    <h2 class="w-1/2">JavaScript</h2>
+                    <h2 class="w-1/2">HTML, CSS, jQuery</h2>
+                </div>
+                <div class="flex justify-between">
+                    <h2 class="w-1/2">Node.js, Vue.js</h2>
+                    <h2 class="w-1/2">Vuetify, TailwindCSS</h2>
+                </div>
+                <div class="flex justify-between mt-4">
+                    <h2 class="w-1/2">Git, TFS</h2>
+                    <h2 class="w-1/2">GitHub, GitLab, BitBucket</h2>
+                </div>
+                <div class="flex justify-between">
+                    <h2 class="w-1/2">DevOps, CI/CD</h2>
+                    <h2 class="w-1/2">Azure, Travis, Jenkins</h2>
+                </div>
+                <div class="flex justify-between mt-4">
+                    <h2 class="w-1/2">Java, Kotlin</h2>
+                    <h2 class="w-1/2">Android, Google Play Console</h2>
+                </div>
+                <div class="flex justify-between mt-4">
+                    <h2 class="w-1/2">Python, Lua</h2>
+                    <h2 class="w-1/2">DSL, Embedded Scripting</h2>
+                </div>
+                <div class="flex justify-between mt-4">
+                    <h2 class="w-1/2">C++</h2>
+                    <h2 class="w-1/2">Qt, SDL, SFML</h2>
+                </div>
+                <div class="flex justify-between mt-4">
+                    <h2 class="w-1/2">Serialization</h2>
+                    <h2 class="w-1/2">Protobuf</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 p-2 mb-8 gap-x-4">
+        <div class="col-span-2 md:col-span-4">
+            <h1 class="text-xl font-bold mb-4">
+                Right, of course you want MY links! >:(
             </h1>
         </div>
+        <a href="https://github.com/andreyrk" target="_blank">
+            <div class="col-span-1 group cursor-pointer">
+                <div class="rounded-md py-2 w-full">
+                    GitHub
+                </div>
+                <div class="group-hover:bg-blue-600 transition ease-in-out delay-100 duration-300 h-2 w-full rounded-sm"></div>
+            </div>
+        </a>
+        <a href="https://linkedin.com/in/andreyrk/" target="_blank">
+            <div class="col-span-1 group cursor-pointer">
+                <div class="rounded-md py-2 w-full">
+                    LinkedIn
+                </div>
+                <div class="group-hover:bg-blue-600 transition ease-in-out delay-100 duration-300 h-2 w-full rounded-sm"></div>
+            </div>
+        </a>
+        <a href="https://stackoverflow.com/users/8104581/andreyrk" target="_blank">
+            <div class="col-span-1 group cursor-pointer">
+                <div class="rounded-md py-2 w-full">
+                    StackOverflow
+                </div>
+                <div class="group-hover:bg-blue-600 transition ease-in-out delay-100 duration-300 h-2 w-full rounded-sm"></div>
+            </div>
+        </a>
+        <a href="https://instagram.com/andreyrk_" target="_blank">
+            <div class="col-span-1 group cursor-pointer">
+                <div class="rounded-md py-2 w-full">
+                    Instagram
+                </div>
+                <div class="group-hover:bg-blue-600 transition ease-in-out delay-100 duration-300 h-2 w-full rounded-sm"></div>
+            </div>
+        </a>
     </div>
 </div>
 
